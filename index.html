@@ -39,13 +39,99 @@
     <footer>
       <div class="container">
         <div class="ftr-content">
-          <a href="./index.html">
-            <svg>
-              <use href="./src/img/icons.svg#logo"></use>
-            </svg>
-          </a>
+          <div class="ftr-contact-div">
+            <a href="./index.html" class="ftr-logo">
+              <svg class="ftr-logo">
+                <use href="./src/img/icons.svg#logo"></use>
+              </svg>
+            </a>
+            <address class="ftr-contact">
+              <ul>
+                <li class="contact-list">
+                  <a href="tel:+380665438912" class="ftr-adrs-link"
+                    >+38 066 543 8912</a
+                  >
+                </li>
+                <li class="contact-list">
+                  <a
+                    href="https://maps.app.goo.gl/gN1hGMCLPd47ZX417"
+                    class="ftr-adrs-link"
+                    target="_blank"
+                    >1678 S. Pioneer Road Salt Lake City UT 84104</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="ftr-nav">
+            <ul class="ftr-social">
+              <li class="ftr-social-item">
+                <a
+                  href="https://www.instagram.com/goit.turkiye/"
+                  target="_blank"
+                  class="ftr-social-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="ftr-social-item">
+                <a
+                  href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                  target="_blank"
+                  class="ftr-social-link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="ftr-social-item">
+                <a
+                  href="https://www.youtube.com/@GoITTurkey"
+                  target="_blank"
+                  class="ftr-social-link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+            <ul class="ftr-menu">
+              <li class="ftr-menu-item">
+                <a href="#" class="ftr-menu-link">About Us</a>
+              </li>
+              <li class="ftr-menu-item">
+                <a href="#" class="ftr-menu-link">Our Courses</a>
+              </li>
+              <li class="ftr-menu-item">
+                <a href="#" class="ftr-menu-link">Our Mentors</a>
+              </li>
+              <li class="ftr-menu-item">
+                <a href="#" class="ftr-menu-link">Reviews</a>
+              </li>
+              <li class="ftr-menu-item">
+                <a href="#" class="ftr-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <form action="#" class="ftr-subscribe">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="sub-email"
+              class="ftr-sub-input"
+              pattern="(?![_.-])((?![_.-][_.-])[\w.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}"
+              required
+            />
+            <button type="submit" class="ftr-sub-button">Go</button>
+          </form>
         </div>
-        <div class="ftr-privacy"></div>
+        <div class="ftr-privacy-copyright">
+          <div class="ftr-privacy">
+            <a href="" target="_blank" class="ftr-pv-link">Privacy Policy</a>
+            <a href="" target="_blank" class="ftr-pv-link"
+              >Public Offering Agreement</a
+            >
+          </div>
+          <div class="ftr-copyright">
+            <p class="ftr-cr-text">2024 Focus Frame</p>
+            <p class="ftr-cr-text">© All rights reserved</p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
