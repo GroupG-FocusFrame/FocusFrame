@@ -1,0 +1,111 @@
+/* Mobile Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Dm Sans', sans-serif;
+  background-color: #121212;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
+  max-width: 335px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+footer{
+  margin-bottom: 0;
+}
+
+/* Tablet Reset */
+
+@media screen and (min-width: 768px) {
+  body {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+  .container {    /* Tüm Sectionlara "container" sınıfı ekleyin. */
+    max-width: 704px;
+    margin: 0 auto 100px;
+    padding: 0 32px;
+  }
+
+  footer{
+    margin-bottom: 0;
+  }
+}
+
+/* Desktop*1280 Reset */
+
+@media screen and (min-width: 1280px) {
+    body {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
+        max-width: 1080px;
+        margin: 0 auto 150px;
+        padding: 0 100px;
+      }
+
+    footer{
+      margin-bottom: 0;
+    }
+}
+
+/* Desktop*1440 Reset */
+
+@media screen and (min-width: 1440px) {
+    body {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
+      max-width: 1240px;
+      margin: 0 auto 150px;
+      padding: 0 100px;
+    }
+
+    footer{
+      margin-bottom: 0px;
+    }
+}
