@@ -4,6 +4,25 @@
   height: 20px;
 }
 
+.ftr-logo-link {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.ftr-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer.container {
+  padding: 20px;
+}
+
+.ftr-contact-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 /* Tablet Design */
 @media screen and (min-width: 768px) {
 }
