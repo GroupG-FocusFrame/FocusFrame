@@ -1,4 +1,13 @@
 /* Mobile Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -44,7 +53,7 @@ body {
 }
 
 .container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
-  max-width: 335px;
+  width: 100%;
   margin: 0 auto 80px;
   padding: 0 20px;
 }
@@ -62,7 +71,7 @@ footer{
     }
   
   .container {    /* Tüm Sectionlara "container" sınıfı ekleyin. */
-    max-width: 704px;
+    width: 100%;
     margin: 0 auto 100px;
     padding: 0 32px;
   }
@@ -81,7 +90,7 @@ footer{
     }
   
     .container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
-        max-width: 1080px;
+        width: 100%;
         margin: 0 auto 150px;
         padding: 0 100px;
       }
@@ -100,7 +109,7 @@ footer{
     }
   
     .container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
-      max-width: 1240px;
+      width: 100%;
       margin: 0 auto 150px;
       padding: 0 100px;
     }
