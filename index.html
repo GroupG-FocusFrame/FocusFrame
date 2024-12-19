@@ -34,33 +34,99 @@
     <link rel="stylesheet" href="./src/css/menu.css" />
   </head>
   <body>
-    <header class="header container">
+    <header id="header" class="header container">
       <!----- Ozan ----->
-      <nav class="nav-menu">
-        <ul class="list">
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
-      </nav>
+      <div class="nav-container">
+        <nav class="navbar-menu">
+          <a href="./index.html" class="navbar-logo"
+            ><svg class="navbar-logo-icon">
+              <use href="./src/img/icons.svg#icon-logo"></use></svg
+          ></a>
+          <ul class="navbar-menu-list">
+            <li class="navbar-menu-item">
+              <a href="#about-us" class="navbar-menu-link">About Us</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#our-courses" class="navbar-menu-link">Our Courses</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#our-mentors" class="navbar-menu-link">Our Mentors</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#reviews" class="navbar-menu-link">Reviews</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#footer" class="navbar-menu-link">Contacts</a>
+            </li>
+          </ul>
+          <div class="navbar-actions">
+            <button
+              type="button"
+              class="navbar-menu-button navbar-menu-camera-button"
+            >
+              <svg width="16" height="16" class="navbar-menu-button-icon">
+                <use href="./src/img/icons.svg#icon-camera"></use>
+              </svg>
+            </button>
+            <button
+              class="navbar-menu-button navbar-menu-toggle"
+              onclick="document.getElementById('sidebarMenu').style.display = 'block'"
+            >
+              <svg class="navbar-menu-toggle-icon">
+                <use href="./src/img/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <a href="#sign-up" class="page-button">Sign Up</a>
+      </div>
     </header>
     <main>
       <!----- Aleyna ----->
-      <section class="hero container"></section>
+      <section id="hero" class="hero container"></section>
       <!----- Ozan ----->
-      <section class="advertisement container"></section>
+      <section id="advertisement" class="advertisement container"></section>
       <!----- Metehan ----->
-      <section class="about-us container"></section>
+      <section id="about-us" class="about-us container"></section>
       <!----- Yunus ----->
-      <section class="our-courses container"></section>
+      <section id="our-courses" class="our-courses container"></section>
       <!----- Metehan ----->
-      <section class="our-mentors container"></section>
+      <section id="our-mentors" class="our-mentors container"></section>
       <!----- Furkan ----->
-      <section class="sign-up container"></section>
+      <section id="sign-up" class="sign-up container"></section>
       <!----- Yunus ----->
-      <section class="reviews container"></section>
+      <section id="reviews" class="reviews container"></section>
     </main>
     <!----- Can ----->
-    <footer class="footer container"></footer>
+    <footer id="footer" class="footer container"></footer>
+    <!----- Ozan ----->
+    <div class="sidebar-menu" id="sidebarMenu">
+      <button
+        type="button"
+        class="sidebar-menu-close"
+        onclick="document.getElementById('sidebarMenu').style.display = 'none'"
+      >
+        <svg width="32" height="32" class="sidebar-menu-close-icon">
+          <use href="./src/img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="sidebar-menu-list">
+        <li class="sidebar-menu-item">
+          <a href="#about-us" class="sidebar-menu-link active">About Us</a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#our-courses" class="sidebar-menu-link">Our Courses</a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#our-mentors" class="sidebar-menu-link">Our Mentors</a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#reviews" class="sidebar-menu-link">Reviews</a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#footer" class="sidebar-menu-link">Contacts</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
