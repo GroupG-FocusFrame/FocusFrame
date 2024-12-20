@@ -34,60 +34,130 @@
     <link rel="stylesheet" href="./src/css/menu.css" />
   </head>
   <body>
-    <header id="header" class="header container">
-      <!----- Ozan ----->
-      <div class="nav-container">
-        <nav class="navbar-menu">
-          <a href="./index.html" class="navbar-logo"
-            ><svg class="navbar-logo-icon">
-              <use href="./src/img/icons.svg#icon-logo"></use></svg
-          ></a>
-          <ul class="navbar-menu-list">
-            <li class="navbar-menu-item">
-              <a href="#about-us" class="navbar-menu-link">About Us</a>
-            </li>
-            <li class="navbar-menu-item">
-              <a href="#our-courses" class="navbar-menu-link">Our Courses</a>
-            </li>
-            <li class="navbar-menu-item">
-              <a href="#our-mentors" class="navbar-menu-link">Our Mentors</a>
-            </li>
-            <li class="navbar-menu-item">
-              <a href="#reviews" class="navbar-menu-link">Reviews</a>
-            </li>
-            <li class="navbar-menu-item">
-              <a href="#footer" class="navbar-menu-link">Contacts</a>
-            </li>
-          </ul>
-          <div class="navbar-actions">
-            <button
-              type="button"
-              class="navbar-menu-button navbar-menu-camera-button"
-            >
-              <svg width="16" height="16" class="navbar-menu-button-icon">
-                <use href="./src/img/icons.svg#icon-camera"></use>
-              </svg>
-            </button>
-            <button
-              class="navbar-menu-button navbar-menu-toggle"
-              onclick="document.getElementById('sidebarMenu').style.display = 'block'"
-            >
-              <svg class="navbar-menu-toggle-icon">
-                <use href="./src/img/icons.svg#icon-menu"></use>
-              </svg>
-            </button>
+    <div class="wrap">
+      <header id="header" class="header">
+        <!----- Ozan ----->
+        <div class="header-wrap">
+          <div class="header-item">
+            <nav class="header-navigation">
+              <a href="#" class="header-link-logo">
+                <svg width="123" height="16" class="header-icon-logo">
+                  <use href="./src/img/icons.svg#icon-logo"></use>
+                </svg>
+              </a>
+              <ul class="header-nav">
+                <li class="header-nav-list">
+                  <a href="#about-us" class="header-nav-link">About us</a>
+                </li>
+                <li class="header-nav-list">
+                  <a href="#our-courses" class="header-nav-link">Our courses</a>
+                </li>
+                <li class="header-nav-list">
+                  <a href="#our-mentors" class="header-nav-link">Our mentors</a>
+                </li>
+                <li class="header-nav-list">
+                  <a href="#reviews" class="header-nav-link">Reviews</a>
+                </li>
+                <li class="header-nav-list">
+                  <a href="#footer" class="header-nav-link">Contacts</a>
+                </li>
+              </ul>
+
+              <a href="#sign-up" class="header-camera">
+                <svg width="16" height="16" class="header-camera-item">
+                  <use href="./src/img/icons.svg#icon-camera"></use>
+                </svg>
+              </a>
+              <button class="header-btn-menu" type="button">
+                <svg
+                  width="32"
+                  height="22"
+                  class="header-btn-menu-item hbmi-mob"
+                >
+                  <use href="./src/img/icons.svg#icon-menu-open"></use>
+                </svg>
+                <svg
+                  width="40"
+                  height="28"
+                  class="header-btn-menu-item hbmi-tab"
+                >
+                  <use href="./src/img/icons.svg#icon-menu-open"></use>
+                </svg>
+              </button>
+            </nav>
           </div>
-        </nav>
-        <a href="#sign-up" class="page-button">Sign Up</a>
-      </div>
-    </header>
-    <main>
+          <a href="#sign-up" class="header-btn">Sign up</a>
+        </div>
+        <!----- Header Menu [Ozan] ----->
+        <div class="header-menu">
+          <div class="header-menu-item">
+            <div class="header-menu-wrap">
+              <button type="button" class="header-btn-esc">
+                <svg width="32" height="32" class="header-btn-esc-item">
+                  <use href="./src/img/icons.svg#icon-menu-close"></use>
+                </svg>
+              </button>
+
+              <ul class="header-nav-menu">
+                <li class="header-nav-list-mob item">
+                  <a href="#about-us" class="header-nav-link-mob">About us</a>
+                </li>
+                <li class="header-nav-list-mob item">
+                  <a href="#our-courses" class="header-nav-link-mob"
+                    >Our courses</a
+                  >
+                </li>
+                <li class="header-nav-list-mob item">
+                  <a href="#our-mentors" class="header-nav-link-mob"
+                    >Our mentors</a
+                  >
+                </li>
+                <li class="header-nav-list-mob item">
+                  <a href="#reviews" class="header-nav-link-mob">Reviews</a>
+                </li>
+                <li class="header-nav-list-mob item">
+                  <a href="#footer" class="header-nav-link-mob">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./src/img/header/Rectangle-tab.jpg    1x,
+                  ./src/img/header/Rectangle-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./src/img/header/Rectangle-mob.jpg    1x,
+                  ./src/img/header/Rectangle-mob-2x.jpg 2x
+                "
+                media="(min-width:320px)"
+              />
+              <img
+                src="./src/img/header/Rectangle-mob.jpg"
+                alt="Camera"
+                class="header-img"
+              />
+            </picture>
+          </div>
+        </div>
+      </header>
       <!----- Aleyna ----->
       <section id="hero" class="hero container"></section>
+    </div>
+    <main>
       <!----- Ozan ----->
-      <section id="advertisement" class="advertisement container"></section>
+      <section id="advertisement" class="advertisement">
+        <div class="advertisement-div">
+          <h2 class="advertisement-title">
+            Master <span>your photography</span> skills with us!
+          </h2>
+        </div>
+      </section>
       <!----- Metehan ----->
-      <section id="about-us" class="about-us container">
+      <section id="about-us" class="about-us">
         <div class="about-us-container">
           <h2 class="section-title about-title" id="about_us">
             About <span class="section-title span">us</span>
@@ -159,9 +229,9 @@
         </div>
       </section>
       <!----- Yunus ----->
-      <section id="our-courses" class="our-courses container"></section>
+      <section id="our-courses" class="our-courses"></section>
       <!----- Metehan ----->
-      <section id="our-mentors" class="our-mentors container">
+      <section id="our-mentors" class="our-mentors">
         <div class="mentors-container">
           <h2 class="mentors-title section-title">our <span>mentors</span></h2>
           <ul class="mentors-members">
@@ -241,40 +311,24 @@
         </div>
       </section>
       <!----- Furkan ----->
-      <section id="sign-up" class="sign-up container"></section>
+      <section id="sign-up" class="sign-up"></section>
       <!----- Yunus ----->
-      <section id="reviews" class="reviews container"></section>
+      <section id="reviews" class="reviews"></section>
     </main>
     <!----- Can ----->
-    <footer id="footer" class="footer container"></footer>
-    <!----- Ozan ----->
-    <div class="sidebar-menu" id="sidebarMenu">
-      <button
-        type="button"
-        class="sidebar-menu-close"
-        onclick="document.getElementById('sidebarMenu').style.display = 'none'"
-      >
-        <svg width="32" height="32" class="sidebar-menu-close-icon">
-          <use href="./src/img/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <ul class="sidebar-menu-list">
-        <li class="sidebar-menu-item">
-          <a href="#about-us" class="sidebar-menu-link active">About Us</a>
-        </li>
-        <li class="sidebar-menu-item">
-          <a href="#our-courses" class="sidebar-menu-link">Our Courses</a>
-        </li>
-        <li class="sidebar-menu-item">
-          <a href="#our-mentors" class="sidebar-menu-link">Our Mentors</a>
-        </li>
-        <li class="sidebar-menu-item">
-          <a href="#reviews" class="sidebar-menu-link">Reviews</a>
-        </li>
-        <li class="sidebar-menu-item">
-          <a href="#footer" class="sidebar-menu-link">Contacts</a>
-        </li>
-      </ul>
-    </div>
+    <footer id="footer" class="footer"></footer>
+    <script type="module" src="./src/main.js"></script>
+    <script>
+      function setAnimationDuration() {
+        if (width > 1440) {
+          const slideText = document.querySelector('.advertisement-title');
+          const width = window.innerWidth;
+          const duration = Math.floor(10 + (width - 1440) / 160);
+          slideText.style.animationDuration = duration + 's';
+        }
+      }
+      window.onload = setAnimationDuration;
+      window.onresize = setAnimationDuration;
+    </script>
   </body>
 </html>
