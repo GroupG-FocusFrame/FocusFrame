@@ -156,7 +156,6 @@
      .sign-up  .box {
         width: 768px;
         height: 577px;
-        padding: 0px 32px;
      }
     
      .sign-up  .box .sign-up_left {
@@ -187,6 +186,8 @@
         width: 100%;
         height: 423px;
      }
+
+
     
      .sign-up  .box .sign-up_left .sign-up-form .input-box {
         gap: 14px;
@@ -260,7 +261,6 @@
         flex-shrink: 0;
         gap: 60px;
         margin: 0px 10px;
-        padding: 0px 100px;
         width: 1280px;
         height: 590px;
     }    
@@ -296,6 +296,24 @@
         width: 100%;
         height: 435px;
      }
+
+     .sign-up .box .sign-up_left .sign-up-form p {
+        color: #FFFFFF80;
+        font-family: "DM Sans", sans-serif; 
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;    
+    }
+    
+    .sign-up .box .sign-up_left .sign-up-form p span {
+        color: #FFFFFF80;
+        font-family: "DM Sans", sans-serif; 
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
     
      .sign-up  .box .sign-up_left .sign-up-form .input-box {
         gap: 14px;
@@ -342,6 +360,16 @@
         margin: 0;
      }
     
+    .sign-up .box .sign-up_left .sign-up-form p span {
+        color: #FFFFFF80;
+        font-family: "DM Sans", sans-serif; 
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
     .sign-up .box .sign-up_right {
         display: flex;
         align-items: flex-end;
@@ -405,7 +433,6 @@
         justify-content: space-between;
         flex-shrink: 0;
         gap: 200px;
-        padding: 0px 100px;
         width: 1440px;
         height: 578px;
     }
@@ -440,10 +467,27 @@
         width: 100%;
         height: 435px;
      }
+
+    .sign-up .box .sign-up_left .sign-up-form p {
+        color: #FFFFFF80;
+        font-family: "DM Sans", sans-serif; 
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;    
+    }
+    
+    .sign-up .box .sign-up_left .sign-up-form p span {
+        color: #FFFFFF80;
+        font-family: "DM Sans", sans-serif; 
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
     
      .sign-up  .box .sign-up_left .sign-up-form .input-box {
         gap: 14px;
-        
      }
     
      .sign-up  .box .sign-up_left .sign-up-form .input-box input {
