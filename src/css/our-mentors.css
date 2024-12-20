@@ -1,22 +1,103 @@
 /* Mobile Design */
+.mentors {
+    padding-bottom: 80px;
+}
 
+.mentors-title {
+    margin-bottom: 40px;
+}
+
+.mentors-item {
+    max-width: 185px;
+    margin: 0 auto 40px;
+}
+
+.mentors-item:last-child {
+    margin-bottom: 0;
+}
+
+.mentors-image {
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.mentors-subtitle {
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.mentors-experience {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+}
 
 
 
 /* Tablet Design */
 
 @media screen and (min-width: 768px) {
-  
+    .mentors {
+        padding-bottom: 100px;
+    }
+
+    .mentors-members {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 93px 100px;
+    }
+
+    .mentors-item {
+        margin: 0;
+        max-width: 194px;
+    }
+
+    .mentors-title {
+        margin-bottom: 50px;
+    }
+
+    .mentors-subtitle {
+        font-size: 28px;
+        line-height: 1.14;
+    }
+
+    .mentors-experience {
+        font-size: 14px;
+        line-height: 1.29;
+    }
 }
 
 /* Desktop*1280 Design */
 
 @media screen and (min-width: 1280px) {
 
+.mentors {
+        padding-bottom: 150px;
+    }
+
+    .mentors-members {
+        gap: 100px;
+    }
 }
 
 /* Desktop*1440 Design */
 
 @media screen and (min-width: 1440px) {
+.mentors {
+        padding-bottom: 150px;
+    }
 
+    .mentors-members {
+        gap: 100px;
+    }
 }
