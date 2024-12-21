@@ -21,17 +21,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus Frame</title>
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/header.css" />
-    <link rel="stylesheet" href="./src/css/hero.css" />
-    <link rel="stylesheet" href="./src/css/advertisement.css" />
-    <link rel="stylesheet" href="./src/css/about-us.css" />
-    <link rel="stylesheet" href="./src/css/our-courses.css" />
-    <link rel="stylesheet" href="./src/css/our-mentors.css" />
-    <link rel="stylesheet" href="./src/css/sign-up.css" />
-    <link rel="stylesheet" href="./src/css/reviews.css" />
-    <link rel="stylesheet" href="./src/css/footer.css" />
-    <link rel="stylesheet" href="./src/css/menu.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
     <div class="wrap">
@@ -145,7 +135,102 @@
         </div>
       </header>
       <!----- Aleyna ----->
-      <section id="hero" class="hero container"></section>
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-wrap">
+            <h1 class="hero-title">
+              Discover the magic of <span>photography</span> in our school
+            </h1>
+            <p class="hero-text">
+              Our photography school offers an unforgettable journey, where you
+              can learn the basics of composition, master technical skills,
+              translate your unique ideas.
+            </p>
+            <div class="hero-students-review-wrap">
+              <div class="hero-students-wrap">
+                <ul class="hero-students-list">
+                  <li class="hero-students-item">
+                    <img
+                      class="hero-student-img"
+                      srcset="./src/img/hero/hero-students-img-mob-1@2x.png"
+                      src="./img/hero/hero-students-img-mob-1.png"
+                      alt="course student"
+                      width="54"
+                      height="54"
+                    />
+                  </li>
+                  <li class="hero-students-item">
+                    <img
+                      class="hero-student-img"
+                      srcset="./src/img/hero/hero-students-img-mob-2@2x.png"
+                      src="./src/img/hero/hero-students-img-mob-2.png"
+                      alt="course student"
+                      width="54"
+                      height="54"
+                    />
+                  </li>
+                  <li class="hero-students-item">
+                    <img
+                      class="hero-student-img"
+                      srcset="./src/img/hero/hero-students-img-mob-3@2x.png"
+                      src="./src/img/hero/hero-students-img-mob-3.png"
+                      alt="course student"
+                      width="54"
+                      height="54"
+                    />
+                  </li>
+                </ul>
+                <a class="hero-students-link" href="#reviews">
+                  Our happy<br />
+                  students
+                  <svg class="hero-students-icon" width="18" height="18">
+                    <use href="./src/img/icons.svg#icon-hero-vector"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="hero-review">
+                <span class="hero-review-icon-container">
+                  <svg class="hero-review-icon" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                </span>
+                <div class="hero-review-text-wrap">
+                  <p class="hero-review-subtitle">Reviews</p>
+                  <p class="hero-review-number">+1500</p>
+                </div>
+              </div>
+            </div>
+            <picture class="hero-photographer-picture">
+              <source
+                srcset="
+                  ./src/img/hero/hero-photographer-img-desktop.png    1x,
+                  ./src/img/hero/hero-photographer-img-desktop@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./src/img/hero/hero-photographer-img-tablet.png    1x,
+                  ./src/img/hero/hero-photographer-img-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./src/img/hero/hero-photographer-img-mob.webp    1x,
+                  ./src/img/hero/hero-photographer-img-mob@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="hero-photographer-img"
+                src="/img/hero/hero-photographer-img-mob.webp"
+                alt="photographer"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
     </div>
     <main>
       <!----- Ozan ----->
@@ -299,10 +384,12 @@
       </section>
       <!----- Metehan ----->
       <section id="our-mentors" class="our-mentors">
-        <div class="mentors-container">
-          <h2 class="mentors-title section-title">our <span>mentors</span></h2>
-          <ul class="mentors-members">
-            <li class="mentors-item">
+        <div class="container">
+          <h2 class="mentors-header">
+            Our <span class="mentors-header-color">Mentors</span>
+          </h2>
+          <ul class="mentors-team">
+            <li class="mentors-team-member">
               <picture>
                 <source
                   srcset="
@@ -324,12 +411,10 @@
                   class="mentor-photo"
                 />
               </picture>
-              <div class="mentors-content">
-                <h3 class="mentors-subtitle">emilia smith</h3>
-                <h4 class="mentors-experience">1.5 years of experience</h4>
-              </div>
+              <h3 class="mentor-name">Emilia Smith</h3>
+              <p class="mentors-ammount">1.5 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li class="mentors-team-member">
               <picture>
                 <source
                   srcset="
@@ -351,12 +436,10 @@
                   class="mentor-photo"
                 />
               </picture>
-              <div class="mentors-content">
-                <h3 class="mentors-subtitle">alex lebedev</h3>
-                <h4 class="mentors-experience">3.5 years of experience</h4>
-              </div>
+              <h3 class="mentor-name">Alex Lebedev</h3>
+              <p class="mentors-ammount">3.5 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li class="mentors-team-member">
               <picture>
                 <source
                   srcset="
@@ -378,12 +461,10 @@
                   class="mentor-photo"
                 />
               </picture>
-              <div class="mentors-content">
-                <h3 class="mentors-subtitle">mia dubrovska</h3>
-                <h4 class="mentors-experience">2.0 years of experience</h4>
-              </div>
+              <h3 class="mentor-name">Mia Dubrovska</h3>
+              <p class="mentors-ammount">2.0 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li class="mentors-team-member">
               <picture>
                 <source
                   srcset="
@@ -405,10 +486,8 @@
                   class="mentor-photo"
                 />
               </picture>
-              <div class="mentors-content">
-                <h3 class="mentors-subtitle">eliot kovalev</h3>
-                <h4 class="mentors-experience">4.0 years of experience</h4>
-              </div>
+              <h3 class="mentor-name">Eliot Kovalev</h3>
+              <p class="mentors-ammount">4.0 years of experience</p>
             </li>
           </ul>
         </div>
