@@ -158,80 +158,73 @@
       </section>
       <!----- Metehan ----->
       <section id="about-us" class="about-us">
-        <div class="about-us-container">
+        <div class="container">
           <h2 class="section-title about-title" id="about_us">
             About <span class="section-title span">us</span>
           </h2>
           <div class="about-wrapper">
-            <div class="photo-li">
-              <picture>
-                <source
-                  srcset="
-                    ./src/img/about/rectangle6-1x-pk1440.png 1x,
-                    ./src/img/about/rectangle6-2x-pk1440.png 2x
-                  "
-                  media="(min-width:1440px)"
-                />
+            <picture>
+              <source
+                srcset="
+                  ./src/img/about/rectangle6-1x-pk1440.png 1x,
+                  ./src/img/about/rectangle6-2x-pk1440.png 2x
+                "
+                media="(min-width:1440px)"
+              />
 
-                <source
-                  srcset="
-                    ./src/img/about/rectangle6-1x-pk1280.png 1x,
-                    ./src/img/about/rectangle6-2x-pk1280.png 2x
-                  "
-                  media="(min-width:1280px)"
-                />
-                <source
-                  srcset="
-                    ./src/img/about/rectangle6-1x-tab.png 1x,
-                    ./src/img/about/rectangle6-2x-tab.png 2x
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./src/img/about/rectangle6-1x-mob.webp 1x,
-                    ./src/img/about/rectangle6-2x-mob.webp 2x
-                  "
-                  media="(min-width:320px)"
-                />
-                <img
-                  src="./src/img/about/rectangle6-1x-mob.webp"
-                  alt="photokamera"
-                  class="about-img"
-                />
-              </picture>
+              <source
+                srcset="
+                  ./src/img/about/rectangle6-1x-pk1280.png 1x,
+                  ./src/img/about/rectangle6-2x-pk1280.png 2x
+                "
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./src/img/about/rectangle6-1x-tab.png 1x,
+                  ./src/img/about/rectangle6-2x-tab.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./src/img/about/rectangle6-1x-mob.webp 1x,
+                  ./src/img/about/rectangle6-2x-mob.webp 2x
+                "
+                media="(min-width:320px)"
+              />
+              <img
+                src="./src/img/about/rectangle6-1x-mob.webp"
+                alt="photokamera"
+                class="about-img"
+              />
+            </picture>
+            <div class="about-text-wrap">
+              <p class="about-text">
+                Our photography school is designed to teach you everything you
+                need to know about this magical art. Regardless of your
+                experience or skill level, we offer a wide range of courses to
+                suit your needs and interests. Our teaching team consists of
+                experienced photographers who have many years of experience in
+                this field. They strive not only to share their knowledge, but
+                also to inspire you to develop and express your unique
+                creativity.
+              </p>
+              <p class="about-text">
+                Our courses cover a wide range of topics, from the basics of
+                photography and equipment use to professional image processing
+                and creating impressive compositions. You will have the
+                opportunity to learn the technical aspects of photography,
+                discover your own style and develop your own visual language.
+              </p>
             </div>
-
-            <ul class="about-list">
-              <li class="about-list-li">
-                <p class="about-list-li-text">
-                  Our photography school is designed to teach you everything you
-                  need to know about this magical art. Regardless of your
-                  experience or skill level, we offer a wide range of courses to
-                  suit your needs and interests. Our teaching team consists of
-                  experienced photographers who have many years of experience in
-                  this field. They strive not only to share their knowledge, but
-                  also to inspire you to develop and express your unique
-                  creativity.
-                </p>
-              </li>
-              <li class="about-list-li about-list-li-dt">
-                <p class="about-list-li-text">
-                  Our courses cover a wide range of topics, from the basics of
-                  photography and equipment use to professional image processing
-                  and creating impressive compositions. You will have the
-                  opportunity to learn the technical aspects of photography,
-                  discover your own style and develop your own visual language.
-                </p>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
       <!----- Yunus ----->
       <section id="our-courses" class="courses">
-        <div class="container courses-container">
-          <div class="courses-wrap">
+        <div class="container">
+          <div class="courses-title-wrap">
             <h2 class="courses-title">Our <span>Courses</span></h2>
             <p class="courses-text">
               At our photography school, we offer a variety of courses that
@@ -240,47 +233,68 @@
               goals.
             </p>
           </div>
+
           <ol class="courses-list">
-            <li class="courses-item">
-              <div class="courses-number">01</div>
-              <a class="courses-link" href="#sign-up">
-                <svg class="courses-icon" width="20" height="20">
-                  <use href="./src/img/icons.svg#icon-courses"></use>
-                </svg>
-              </a>
-              <h3 class="courses-subtitle">Basics of photography</h3>
-              <p class="courses-item-text">
-                During this course, you will be able to familiarize yourself
-                with different types of cameras, learn the basics of
-                composition.
-              </p>
+            <li class="course-item">
+              <div class="courses-number-wrap">
+                <p class="courses-number">01</p>
+                <a class="courses-wrap-link" href="#sign">
+                  <svg class="courses-icon" width="20" height="20">
+                    <use
+                      href="./svg/img/icons.svg#icon-courses-vector-up"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="course-card">
+                <h3 class="course-name">Basics of photography</h3>
+                <p class="course-descr">
+                  During this course, you will be able to familiarize yourself
+                  with different types of cameras, learn the basics of
+                  composition.
+                </p>
+              </div>
             </li>
-            <li class="courses-item">
-              <div class="courses-number">02</div>
-              <a class="courses-link" href="#sign-up">
-                <svg class="courses-icon" width="20" height="20">
-                  <use href="./src/img/icons.svg#icon-courses"></use>
-                </svg>
-              </a>
-              <h3 class="courses-subtitle">Landscape photography</h3>
-              <p class="courses-item-text">
-                In this course, you'll learn how to choose the right angles,
-                frame landscapes, and create depth and perspective in your
-                images.
-              </p>
+
+            <li class="course-item">
+              <div class="courses-number-wrap">
+                <p class="courses-number">02</p>
+                <a class="courses-wrap-link" href="#sign">
+                  <svg class="courses-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-courses-vector-up"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="course-card">
+                <h3 class="course-name">Landscape photography</h3>
+                <p class="course-descr">
+                  In this course, you'll learn how to choose the right angles,
+                  frame landscapes, and create depth and perspective in your
+                  images.
+                </p>
+              </div>
             </li>
-            <li class="courses-item">
-              <div class="courses-number">03</div>
-              <a class="courses-link" href="#sign-up">
-                <svg class="courses-icon" width="20" height="20">
-                  <use href="./src/img/icons.svg#icon-courses"></use>
-                </svg>
-              </a>
-              <h3 class="courses-subtitle">Portrait <br />photography</h3>
-              <p class="courses-item-text">
-                During this course, you will learn to choose the right lighting,
-                reproduce the mood and expressions on the faces of the models.
-              </p>
+
+            <li class="course-item">
+              <div class="courses-number-wrap">
+                <p class="courses-number">03</p>
+                <a class="courses-wrap-link" href="#sign">
+                  <svg class="courses-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-courses-vector-up"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="course-card">
+                <h3 class="course-name">Portrait photography</h3>
+                <p class="course-descr">
+                  During this course, you will learn to choose the right
+                  lighting, reproduce the mood and expressions on the faces of
+                  the models.
+                </p>
+              </div>
             </li>
           </ol>
         </div>

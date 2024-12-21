@@ -1,38 +1,23 @@
 /* Mobile Design */
-.courses-container {
-    width: 100%;
-    max-width: 375px;
-}
-
 .courses {
-    padding-bottom: 80px;
+    padding-top: 80px;
 }
 
-.courses-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.courses-title-wrap {
     margin-bottom: 40px;
 }
 
 .courses-title {
-    color: #fff;
     font-size: 28px;
     font-weight: 500;
     line-height: 1.14;
-    /* 32px/28 */
-    letter-spacing: -0.01em;
-}
-
-.courses-title span {
-    color: #bea69e;
+    letter-spacing: -0.07em;
+    margin-bottom: 20px;
 }
 
 .courses-text {
     font-size: 14px;
-    font-weight: 400;
-    line-height: 1.29;
-    /* 128.571% */
+    line-height: 1.28;
     letter-spacing: -0.02em;
 }
 
@@ -42,39 +27,61 @@
     gap: 20px;
 }
 
-.courses-item {
+.courses-title span{
+    color: #bea69e;
+}
+
+.course-item {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
-    position: relative;
     padding: 28px;
-    width: 100%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .courses-number {
-    position: absolute;
     color: rgba(255, 255, 255, 0.4);
     font-size: 14px;
-    font-weight: 400;
-    line-height: 1.29;
-    /* 128.571% */
+    line-height: 1.28;
     letter-spacing: -0.02em;
-    /* -0.28px/14 */
 }
 
-.courses-link {
-    position: absolute;
-    right: 28px;
+.courses-number-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.course-name {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.14;
+    margin-bottom: 165px;
+    max-width: 220px;
+}
+
+.course-descr {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.courses-wrap-link {
     width: 32px;
     height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background-color: #1d1d1d;
-    padding: 6px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.courses-link:focus,
-.courses-link:hover {
+.courses-wrap-link:hover,
+.courses-wrap-link:focus,
+.courses-wrap-link:active {
     background-color: #bea69e;
 }
 
@@ -84,52 +91,31 @@
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.courses-link:focus .courses-icon,
-.courses-link:hover .courses-icon,
-.courses-link:active .courses-icon {
-    stroke: #ffffff;
+.courses-wrap-link:hover .courses-icon,
+.courses-wrap-link:focus .courses-icon,
+.courses-wrap-link:active .courses-icon {
+    stroke: white;
 }
-
-.courses-subtitle {
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 1.14;
-    /* 114.286% */
-    padding-top: 60px;
-    margin-bottom: 164px;
-    max-width: 275px;
-}
-
-.courses-item-text {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.29;
-    /* 128.571% */
-    letter-spacing: -0.02em;
-    /* -0.28px/14 */
-}
-
 
 /* Tablet Design */
 
 @media screen and (min-width: 768px) {
     .courses {
-        padding-bottom: 100px;
-    }
-
-    .courses-container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
-    .courses-wrap {
-        gap: 58px;
-        margin-bottom: 50px;
+        padding-top: 100px;
     }
 
     .courses-title {
         font-size: 48px;
+        font-weight: 500;
+        line-height: 1.12;
+        letter-spacing: -0.04em;
+        margin: 0;
+    }
+
+    .courses-title-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
     }
 
     .courses-text {
@@ -138,9 +124,22 @@
         max-width: 381px;
     }
 
-    .courses-item {
+    .course-item {
+        flex-basis: calc((100% - 20px) / 2);
         padding: 32px;
-        width: calc((100% - 20px) / 2);
+    }
+
+    .courses-number-wrap {
+        margin-bottom: 32px;
+    }
+
+    .course-name {
+        margin-bottom: 180px;
+    }
+
+    .course-descr {
+        font-size: 16px;
+        line-height: 1.25;
     }
 }
 
@@ -148,45 +147,31 @@
 
 @media screen and (min-width: 1280px) {
     .courses {
-        padding-bottom: 150px;
+        padding-top: 150px;
     }
 
-    .courses-container {
-        max-width: 1280px;
-        padding: 0 100px;
-
+    .course-item {
+        flex-basis: calc((100% - 40px) / 3);
     }
 
     .courses-text {
-        max-width: 400px;
-        margin-left: auto;
+        max-width: 405px;
     }
 
-    .courses-item {
-        width: calc((100% - 40px) / 3);
+    .course-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 16px -16px rgba(94, 91, 91, 0.6);
     }
 }
 
 /* Desktop*1440 Design */
 
 @media screen and (min-width: 1440px) {
-    .courses {
-        padding-bottom: 150px;
-    }
-
-    .courses-container {
-        max-width: 1440px;
-        padding: 0 100px;
-
-    }
-
     .courses-text {
-        max-width: 400px;
-        margin-left: auto;
+        max-width: 565px;
     }
 
-    .courses-item {
-        width: 400px
+    .course-name {
+        margin-bottom: 200px;
     }
-
 }
