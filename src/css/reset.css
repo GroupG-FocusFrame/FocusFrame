@@ -1,48 +1,62 @@
-/* Mobile Reset */
+/* Reset */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
 }
 
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+ol,
+li
+{
   margin: 0;
-  text-decoration: none;
-  padding: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  font-style: normal;
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
   cursor: pointer;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+html{
+  scroll-behavior: smooth;
 }
 
 body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'DM Sans', sans-serif;
   font-family: 'Dm Sans', sans-serif;
   background-color: #121212;
   font-size: 14px;
@@ -52,65 +66,101 @@ body {
   color: #fff;
 }
 
-.container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
-  margin: 0 auto 80px;
+/* Mobile Resets */
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
-footer{
-  margin-bottom: 0;
+.wrap {
+  background-image: url(../img/header-hero/header-hero-mob-1.png);
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .wrap {
+    background-image: url(../img/header-hero/header-hero-mob-2.png);
+  }
+}
 /* Tablet Reset */
 
 @media screen and (min-width: 768px) {
-  body {
-      font-size: 16px;
-      line-height: 20px;
-    }
-  
-  .container {    /* Tüm Sectionlara "container" sınıfı ekleyin. */
-    margin: 0 auto 100px;
+  .container {
+    max-width: 768px;
     padding: 0 32px;
   }
 
-  footer{
-    margin-bottom: 0;
+  .wrap {
+    background-image: url(../img/header-hero/header-hero-tablet-1.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .wrap {
+      background-image: url(../img/header-hero/header-hero-tablet-2.png);
+    }
   }
 }
 
 /* Desktop*1280 Reset */
 
 @media screen and (min-width: 1280px) {
-    body {
-      font-size: 16px;
-      line-height: 20px;
-    }
-  
-    .container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
-        margin: 0 auto 150px;
-        padding: 0 100px;
-      }
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
 
-    footer{
-      margin-bottom: 0;
+  .wrap {
+    background-image: url(../img/header-hero/header-hero-dec1280-1.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .wrap {
+      background-image: url(../img/header-hero/header-hero-dec1280-2.png);
     }
+  }
 }
 
 /* Desktop*1440 Reset */
 
 @media screen and (min-width: 1440px) {
-    body {
-      font-size: 16px;
-      line-height: 20px;
-    }
-  
-    .container {  /* Tüm Sectionlara "container" sınıfı ekleyin. */
-      margin: 0 auto 150px;
-      padding: 0 100px;
-    }
+  .container {
+    max-width: 1440px;
+  }
 
-    footer{
-      margin-bottom: 0px;
+  .wrap {
+    background-image: url(../img/header-hero/header-hero-dec1440-1.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .wrap {
+      background-image: url(../img/header-hero/header-hero-dec1440-2.png);
     }
+  }
+}
+
+/* Hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
