@@ -61,7 +61,7 @@
     max-width: 220px;
 }
 
-.course-descr {
+.course-text {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     line-height: 1.28;
@@ -137,7 +137,7 @@
         margin-bottom: 180px;
     }
 
-    .course-descr {
+    .course-text {
         font-size: 16px;
         line-height: 1.25;
     }
