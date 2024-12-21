@@ -1,0 +1,83 @@
+/* Mobile Design */
+
+.advertisement {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 0;
+}
+
+.advertisement-div{
+    overflow: hidden;
+    background-color: inherit;
+}
+
+.advertisement-title{
+    color: #bea69e;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: slidingAds;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.advertisement-title span {
+    color: #fff;
+}
+
+@keyframes slidingAds{
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(-150%);
+    }
+}
+
+/* Tablet Design */
+
+@media screen and (min-width: 768px) {
+
+    .advertisement {
+    padding: 24px 0;
+    }
+
+    .advertisement-title{
+        animation-duration: 7s;
+    }
+
+    @keyframes slidingAds{
+        from{
+            transform: translateX(100%);
+        }
+
+        to{
+            transform: translateX(-100%);
+        }
+    }
+}
+
+/* Desktop*1280 Design */
+
+@media screen and (min-width: 1280px) {
+    .advertisement-title{
+        font-size: 59px;
+        line-height: 1.08;
+        animation-duration: 9s;
+    }
+}
+
+/* Desktop*1440 Design */
+
+@media screen and (min-width: 1440px) {
+    .advertisement-title{
+        animation-duration: 10s;
+    }
+}

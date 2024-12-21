@@ -1,22 +1,120 @@
-/* Mobile Design */
+ .about-us {
+    padding-top: 80px;
+} 
 
+.section-title {
+    font-family: DM Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.04em;
+    text-align: left;
+    text-transform: capitalize
+}
 
+.section-title span {
+    color: #bea69e;
+}
 
+.about-title {
+    margin-bottom: 40px;
+}
 
-/* Tablet Design */
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+/* =========MEDIA 768========= */
 
 @media screen and (min-width: 768px) {
+    .about-us {
+        padding-top: 100px;
 
+    }
+
+    .about-title {
+        margin-bottom: 50px;
+    }
+
+    .section-title{
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1.13;
+        margin-bottom: 50px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        line-height: 1.25;
+        width: 280px;
+    }
+
+    .about-wrapper{
+        gap: 50px;
+    }
+
+    .about-text-wrap{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
 }
 
-/* Desktop*1280 Design */
+/* =========MEDIA 1280========= */
 
 @media screen and (min-width: 1280px) {
+    .about {
+        padding-top: 150px;
+    }
 
+    .about-wrapper {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-text-wrap{
+        gap: 20px;
+    }
+
+    .about-text:first-child{
+        width: 268px;
+    }
+
+    .about-text:last-child{
+        width: 264px;
+    }
 }
 
-/* Desktop*1440 Design */
+/* =========MEDIA 1440========= */
 
 @media screen and (min-width: 1440px) {
+    .about-text-wrap{
+        gap: 40px;
+    }
 
+    .about-text:first-child{
+        width: 314px;
+    }
+
+    .about-text:last-child{
+        width: 276px;
+    } 
 }
