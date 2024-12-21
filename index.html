@@ -167,37 +167,37 @@
               <picture>
                 <source
                   srcset="
-                    ./src/img/main/about-us-desktop.png,
-                    ./src/img/main/about-us-desktop-2x.png
+                    ./src/img/about/rectangle6-1x-pk1440.png 1x,
+                    ./src/img/about/rectangle6-2x-pk1440.png 2x
                   "
-                  media="(min-width: 1440px)"
+                  media="(min-width:1440px)"
+                />
+
+                <source
+                  srcset="
+                    ./src/img/about/rectangle6-1x-pk1280.png 1x,
+                    ./src/img/about/rectangle6-2x-pk1280.png 2x
+                  "
+                  media="(min-width:1280px)"
                 />
                 <source
                   srcset="
-                    ./src/img/main/about-us-desktop.png,
-                    ./src/img/main/about-us-desktop-2x.png
+                    ./src/img/about/rectangle6-1x-tab.png 1x,
+                    ./src/img/about/rectangle6-2x-tab.png 2x
                   "
-                  media="(min-width: 1280px)"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="
-                    ./src/img/main/about-us-tablet.png,
-                    ./src/img/main/about-us-tablet-2x.png
+                    ./src/img/about/rectangle6-1x-mob.webp 1x,
+                    ./src/img/about/rectangle6-2x-mob.webp 2x
                   "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./src/img/main/about-us-mobile.png,
-                    ./src/img/main/about-us-mobile-2x.png
-                  "
-                  media="(max-width: 767px)"
+                  media="(min-width:320px)"
                 />
                 <img
-                  class="img-about"
-                  src="./src/img/main/about-us-mobile.png"
-                  alt="Photo camera"
-                  loading="lazy"
+                  src="./src/img/about/rectangle6-1x-mob.webp"
+                  alt="photokamera"
+                  class="about-img"
                 />
               </picture>
             </div>
@@ -236,72 +236,108 @@
           <h2 class="mentors-title section-title">our <span>mentors</span></h2>
           <ul class="mentors-members">
             <li class="mentors-item">
-              <img
-                class="mentors-image"
-                srcset="
-                  ./src/img/main/our-mentors-1.png,
-                  ./src/img/main/our-mentors-1@2x.png
-                "
-                src="./src/img/main/our-mentors-1.png"
-                width="180"
-                height="180"
-                alt="emilia"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/mentors/emilia-1x.png 1x,
+                    ./src/img/mentors/emilia-2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./src/img/mentors/emilia-mob-1x.webp 1x,
+                    ./src/img/mentors/emilia-mob-2x.webp 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./src/img/mentors/emilia-mob-1x.webp"
+                  alt="Emilia Smith's photo"
+                  class="mentor-photo"
+                />
+              </picture>
               <div class="mentors-content">
                 <h3 class="mentors-subtitle">emilia smith</h3>
                 <h4 class="mentors-experience">1.5 years of experience</h4>
               </div>
             </li>
             <li class="mentors-item">
-              <img
-                class="mentors-image"
-                srcset="
-                  ./src/img/main/our-mentors-2.png,
-                  ./src/img/main/our-mentors-2@2x.png
-                "
-                src="./src/img/main/our-mentors-2.png"
-                width="180"
-                height="180"
-                alt="alex"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/mentors/alex-1x.png 1x,
+                    ./src/img/mentors/alex-2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./src/img/mentors/alex-mob-1x.webp 1x,
+                    ./src/img/mentors/alex-mob-2x.webp 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./src/img/mentors/alex-mob-1x.webp"
+                  alt="Alex Lebedev's photo"
+                  class="mentor-photo"
+                />
+              </picture>
               <div class="mentors-content">
                 <h3 class="mentors-subtitle">alex lebedev</h3>
                 <h4 class="mentors-experience">3.5 years of experience</h4>
               </div>
             </li>
             <li class="mentors-item">
-              <img
-                class="mentors-image"
-                srcset="
-                  ./src/img/main/our-mentors-3.png,
-                  ./src/img/main/our-mentors-3@2x.png
-                "
-                src="./src/img/main/our-mentors-3.png"
-                width="180"
-                height="180"
-                alt="mia"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/mentors/mia-1x.png 1x,
+                    ./src/img/mentors/mia-2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./src/img/mentors/mia-mob-1x.webp 1x,
+                    ./src/img/mentors/mia-mob-2x.webp 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./src/img/mentors/mia-mob-1x.webp"
+                  alt="Mia Dubrovska's photo"
+                  class="mentor-photo"
+                />
+              </picture>
               <div class="mentors-content">
                 <h3 class="mentors-subtitle">mia dubrovska</h3>
                 <h4 class="mentors-experience">2.0 years of experience</h4>
               </div>
             </li>
             <li class="mentors-item">
-              <img
-                class="mentors-image"
-                srcset="
-                  ./src/img/main/our-mentors-4.png,
-                  ./src/img/main/our-mentors-4@2x.png
-                "
-                src="./src/img/main/our-mentors-4.png"
-                width="180"
-                height="180"
-                alt="eliot"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/mentors/eliot-1x.png 1x,
+                    ./src/img/mentors/eliot-2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./src/img/mentors/eliot-mob-1x.webp 1x,
+                    ./src/img/mentors/eliot-mob-2x.webp 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./src/img/mentors/eliot-mob-1x.webp"
+                  alt="Eliot Kovalev's photo"
+                  class="mentor-photo"
+                />
+              </picture>
               <div class="mentors-content">
                 <h3 class="mentors-subtitle">eliot kovalev</h3>
                 <h4 class="mentors-experience">4.0 years of experience</h4>
@@ -312,8 +348,98 @@
       </section>
       <!----- Furkan ----->
       <section id="sign-up" class="sign-up"></section>
-      <!----- Yunus ----->
-      <section id="reviews" class="reviews"></section>
+      <!----- Ozan ----->
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <h2 class="reviews-header">Reviews</h2>
+          <ul class="reviews-menu">
+            <li class="reviews-menu-list">
+              <div class="reviews-foto-and-stars">
+                <div class="reviews-foto-name">
+                  <img
+                    class="reviews-foto"
+                    srcset="./src/img/reviews/student-one-2.png"
+                    src="./src/img/reviews/student-one.png"
+                    alt="Abraham Baker"
+                    width="56"
+                    height="56"
+                  />
+                  <div class="reviews-name-and-student">
+                    <h3 class="reviews-student-name">Abraham Baker</h3>
+                    <p class="reviews-student">Student</p>
+                  </div>
+                </div>
+                <div class="reviews-icons">
+                  <svg class="reviews-icons-star" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-icons-star" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-icons-star" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-icons-star" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-icons-star-white" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="reviews-text">
+                I am very pleased that I decided to enroll in photography
+                school. The teachers turned out to be very talented and
+                experienced professionals who share their knowledge and are
+                dedicated to their work. I was able to expand my skills and
+                discover my own style.
+              </p>
+            </li>
+            <li class="reviews-menu-list second-review">
+              <div class="reviews-foto-and-stars">
+                <div class="reviews-foto-name">
+                  <img
+                    class="reviews-foto"
+                    srcset="./src/img/reviews/student-two-2.png"
+                    src="./src/img/reviews/student-two.png"
+                    alt="Amanda Lowery"
+                    width="56"
+                    height="56"
+                  />
+                  <div class="reviews-name-and-student">
+                    <h3 class="reviews-student-name">Amanda Lowery</h3>
+                    <p class="reviews-student">Student</p>
+                  </div>
+                </div>
+                <div class="reviews-icons">
+                  <svg class="reviews-icons-star" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-icons-star" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-icons-star" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-icons-star" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-icons-star-white" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="reviews-text">
+                The courses at the photography school exceeded all my
+                expectations. I gained not only technical knowledge, but also
+                inspiration and motivation to reach new heights in my
+                creativity. Hands-on classes and workshops helped me understand
+                different styles of photography.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!----- Can ----->
     <footer id="footer" class="footer"></footer>
