@@ -1,79 +1,81 @@
 /* Mobile Design */
-.mentors {
-    padding-bottom: 80px;
+
+.our-mentors{
+    padding-top: 80px;
 }
 
-.mentors-title {
+.mentors-header {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.023em;
     margin-bottom: 40px;
 }
 
-.mentors-item {
-    max-width: 185px;
-    margin: 0 auto 40px;
+.mentors-header-color {
+    color: #bea69e;
 }
 
-.mentors-item:last-child {
-    margin-bottom: 0;
+.mentors-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
-.mentors-image {
-    margin: 0 auto;
-    border-radius: 50%;
-    margin-bottom: 16px;
-}
-
-.mentors-subtitle {
+.mentors-team-member {
     text-align: center;
+}
+
+.mentor-name {
     margin-bottom: 4px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    text-transform: capitalize;
 }
 
-.mentors-experience {
-    text-align: center;
+.mentors-ammount {
     color: rgba(255, 255, 255, 0.5);
-    font-weight: 400;
+    margin: 0;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: -0.02em;
 }
 
-
+.mentor-photo {
+    margin-bottom: 16px;
+}
 
 /* Tablet Design */
 
 @media screen and (min-width: 768px) {
     .mentors {
-        padding-bottom: 100px;
+        padding-top: 100px;
     }
 
-    .mentors-members {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 93px 100px;
-    }
-
-    .mentors-item {
-        margin: 0;
-        max-width: 194px;
-    }
-
-    .mentors-title {
+    .mentors-header {
+        font-size: 48px;
+        line-height: 1.12;
+        letter-spacing: -0.04em;
         margin-bottom: 50px;
     }
 
-    .mentors-subtitle {
+    .mentors-team {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 93px 100px;
+    }
+
+    .mentor-name {
         font-size: 28px;
         line-height: 1.14;
     }
 
-    .mentors-experience {
+    .mentors-ammount {
         font-size: 14px;
-        line-height: 1.29;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
     }
 }
 
@@ -81,23 +83,20 @@
 
 @media screen and (min-width: 1280px) {
 
-.mentors {
+    .mentors {
         padding-bottom: 150px;
     }
 
-    .mentors-members {
-        gap: 100px;
+    .mentors-team-member{
+        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .mentors-team-member:hover{
+        transform: scale(1.2);
+        z-index: 10;
     }
 }
 
 /* Desktop*1440 Design */
 
-@media screen and (min-width: 1440px) {
-.mentors {
-        padding-bottom: 150px;
-    }
-
-    .mentors-members {
-        gap: 100px;
-    }
-}
+@media screen and (min-width: 1440px) {}
