@@ -21,17 +21,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus Frame</title>
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/header.css" />
-    <link rel="stylesheet" href="./src/css/hero.css" />
-    <link rel="stylesheet" href="./src/css/advertisement.css" />
-    <link rel="stylesheet" href="./src/css/about-us.css" />
-    <link rel="stylesheet" href="./src/css/our-courses.css" />
-    <link rel="stylesheet" href="./src/css/our-mentors.css" />
-    <link rel="stylesheet" href="./src/css/sign-up.css" />
-    <link rel="stylesheet" href="./src/css/reviews.css" />
-    <link rel="stylesheet" href="./src/css/footer.css" />
-    <link rel="stylesheet" href="./src/css/menu.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
     <div class="wrap">
@@ -145,7 +135,102 @@
         </div>
       </header>
       <!----- Aleyna ----->
-      <section id="hero" class="hero container"></section>
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-wrap">
+            <h1 class="hero-title">
+              Discover the magic of <span>photography</span> in our school
+            </h1>
+            <p class="hero-text">
+              Our photography school offers an unforgettable journey, where you
+              can learn the basics of composition, master technical skills,
+              translate your unique ideas.
+            </p>
+            <div class="hero-students-review-wrap">
+              <div class="hero-students-wrap">
+                <ul class="hero-students-list">
+                  <li class="hero-students-item">
+                    <img
+                      class="hero-student-img"
+                      srcset="./src/img/hero/hero-students-img-mob-1@2x.png"
+                      src="./img/hero/hero-students-img-mob-1.png"
+                      alt="course student"
+                      width="54"
+                      height="54"
+                    />
+                  </li>
+                  <li class="hero-students-item">
+                    <img
+                      class="hero-student-img"
+                      srcset="./src/img/hero/hero-students-img-mob-2@2x.png"
+                      src="./src/img/hero/hero-students-img-mob-2.png"
+                      alt="course student"
+                      width="54"
+                      height="54"
+                    />
+                  </li>
+                  <li class="hero-students-item">
+                    <img
+                      class="hero-student-img"
+                      srcset="./src/img/hero/hero-students-img-mob-3@2x.png"
+                      src="./src/img/hero/hero-students-img-mob-3.png"
+                      alt="course student"
+                      width="54"
+                      height="54"
+                    />
+                  </li>
+                </ul>
+                <a class="hero-students-link" href="#reviews">
+                  Our happy<br />
+                  students
+                  <svg class="hero-students-icon" width="18" height="18">
+                    <use href="./src/img/icons.svg#icon-hero-vector"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="hero-review">
+                <span class="hero-review-icon-container">
+                  <svg class="hero-review-icon" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-reviews-star"></use>
+                  </svg>
+                </span>
+                <div class="hero-review-text-wrap">
+                  <p class="hero-review-subtitle">Reviews</p>
+                  <p class="hero-review-number">+1500</p>
+                </div>
+              </div>
+            </div>
+            <picture class="hero-photographer-picture">
+              <source
+                srcset="
+                  ./src/img/hero/hero-photographer-img-desktop.png    1x,
+                  ./src/img/hero/hero-photographer-img-desktop@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./src/img/hero/hero-photographer-img-tablet.png    1x,
+                  ./src/img/hero/hero-photographer-img-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./src/img/hero/hero-photographer-img-mob.webp    1x,
+                  ./src/img/hero/hero-photographer-img-mob@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="hero-photographer-img"
+                src="/img/hero/hero-photographer-img-mob.webp"
+                alt="photographer"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
     </div>
     <main>
       <!----- Ozan ----->
@@ -158,80 +243,73 @@
       </section>
       <!----- Metehan ----->
       <section id="about-us" class="about-us">
-        <div class="about-us-container">
+        <div class="container">
           <h2 class="section-title about-title" id="about_us">
             About <span class="section-title span">us</span>
           </h2>
           <div class="about-wrapper">
-            <div class="photo-li">
-              <picture>
-                <source
-                  srcset="
-                    ./src/img/about/rectangle6-1x-pk1440.png 1x,
-                    ./src/img/about/rectangle6-2x-pk1440.png 2x
-                  "
-                  media="(min-width:1440px)"
-                />
+            <picture>
+              <source
+                srcset="
+                  ./src/img/about/rectangle6-1x-pk1440.png 1x,
+                  ./src/img/about/rectangle6-2x-pk1440.png 2x
+                "
+                media="(min-width:1440px)"
+              />
 
-                <source
-                  srcset="
-                    ./src/img/about/rectangle6-1x-pk1280.png 1x,
-                    ./src/img/about/rectangle6-2x-pk1280.png 2x
-                  "
-                  media="(min-width:1280px)"
-                />
-                <source
-                  srcset="
-                    ./src/img/about/rectangle6-1x-tab.png 1x,
-                    ./src/img/about/rectangle6-2x-tab.png 2x
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./src/img/about/rectangle6-1x-mob.webp 1x,
-                    ./src/img/about/rectangle6-2x-mob.webp 2x
-                  "
-                  media="(min-width:320px)"
-                />
-                <img
-                  src="./src/img/about/rectangle6-1x-mob.webp"
-                  alt="photokamera"
-                  class="about-img"
-                />
-              </picture>
+              <source
+                srcset="
+                  ./src/img/about/rectangle6-1x-pk1280.png 1x,
+                  ./src/img/about/rectangle6-2x-pk1280.png 2x
+                "
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./src/img/about/rectangle6-1x-tab.png 1x,
+                  ./src/img/about/rectangle6-2x-tab.png 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./src/img/about/rectangle6-1x-mob.webp 1x,
+                  ./src/img/about/rectangle6-2x-mob.webp 2x
+                "
+                media="(min-width:320px)"
+              />
+              <img
+                src="./src/img/about/rectangle6-1x-mob.webp"
+                alt="photokamera"
+                class="about-img"
+              />
+            </picture>
+            <div class="about-text-wrap">
+              <p class="about-text">
+                Our photography school is designed to teach you everything you
+                need to know about this magical art. Regardless of your
+                experience or skill level, we offer a wide range of courses to
+                suit your needs and interests. Our teaching team consists of
+                experienced photographers who have many years of experience in
+                this field. They strive not only to share their knowledge, but
+                also to inspire you to develop and express your unique
+                creativity.
+              </p>
+              <p class="about-text">
+                Our courses cover a wide range of topics, from the basics of
+                photography and equipment use to professional image processing
+                and creating impressive compositions. You will have the
+                opportunity to learn the technical aspects of photography,
+                discover your own style and develop your own visual language.
+              </p>
             </div>
-
-            <ul class="about-list">
-              <li class="about-list-li">
-                <p class="about-list-li-text">
-                  Our photography school is designed to teach you everything you
-                  need to know about this magical art. Regardless of your
-                  experience or skill level, we offer a wide range of courses to
-                  suit your needs and interests. Our teaching team consists of
-                  experienced photographers who have many years of experience in
-                  this field. They strive not only to share their knowledge, but
-                  also to inspire you to develop and express your unique
-                  creativity.
-                </p>
-              </li>
-              <li class="about-list-li about-list-li-dt">
-                <p class="about-list-li-text">
-                  Our courses cover a wide range of topics, from the basics of
-                  photography and equipment use to professional image processing
-                  and creating impressive compositions. You will have the
-                  opportunity to learn the technical aspects of photography,
-                  discover your own style and develop your own visual language.
-                </p>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
       <!----- Yunus ----->
       <section id="our-courses" class="courses">
-        <div class="container courses-container">
-          <div class="courses-wrap">
+        <div class="container">
+          <div class="courses-title-wrap">
             <h2 class="courses-title">Our <span>Courses</span></h2>
             <p class="courses-text">
               At our photography school, we offer a variety of courses that
@@ -240,57 +318,78 @@
               goals.
             </p>
           </div>
+
           <ol class="courses-list">
-            <li class="courses-item">
-              <div class="courses-number">01</div>
-              <a class="courses-link" href="#sign-up">
-                <svg class="courses-icon" width="20" height="20">
-                  <use href="./src/img/icons.svg#icon-courses"></use>
-                </svg>
-              </a>
-              <h3 class="courses-subtitle">Basics of photography</h3>
-              <p class="courses-item-text">
-                During this course, you will be able to familiarize yourself
-                with different types of cameras, learn the basics of
-                composition.
-              </p>
+            <li class="course-item">
+              <div class="courses-number-wrap">
+                <p class="courses-number">01</p>
+                <a class="courses-wrap-link" href="#sign-up">
+                  <svg class="courses-icon" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-courses"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="course-card">
+                <h3 class="course-name">Basics of photography</h3>
+                <p class="course-text">
+                  During this course, you will be able to familiarize yourself
+                  with different types of cameras, learn the basics of
+                  composition.
+                </p>
+              </div>
             </li>
-            <li class="courses-item">
-              <div class="courses-number">02</div>
-              <a class="courses-link" href="#sign-up">
-                <svg class="courses-icon" width="20" height="20">
-                  <use href="./src/img/icons.svg#icon-courses"></use>
-                </svg>
-              </a>
-              <h3 class="courses-subtitle">Landscape photography</h3>
-              <p class="courses-item-text">
-                In this course, you'll learn how to choose the right angles,
-                frame landscapes, and create depth and perspective in your
-                images.
-              </p>
+
+            <li class="course-item">
+              <div class="courses-number-wrap">
+                <p class="courses-number">02</p>
+                <a class="courses-wrap-link" href="#sign-up">
+                  <svg class="courses-icon" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-courses"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="course-card">
+                <h3 class="course-name">Landscape photography</h3>
+                <p class="course-text">
+                  In this course, you'll learn how to choose the right angles,
+                  frame landscapes, and create depth and perspective in your
+                  images.
+                </p>
+              </div>
             </li>
-            <li class="courses-item">
-              <div class="courses-number">03</div>
-              <a class="courses-link" href="#sign-up">
-                <svg class="courses-icon" width="20" height="20">
-                  <use href="./src/img/icons.svg#icon-courses"></use>
-                </svg>
-              </a>
-              <h3 class="courses-subtitle">Portrait <br />photography</h3>
-              <p class="courses-item-text">
-                During this course, you will learn to choose the right lighting,
-                reproduce the mood and expressions on the faces of the models.
-              </p>
+
+            <li class="course-item">
+              <div class="courses-number-wrap">
+                <p class="courses-number">03</p>
+                <a class="courses-wrap-link" href="#sign-up">
+                  <svg class="courses-icon" width="20" height="20">
+                    <use href="./src/img/icons.svg#icon-courses"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="course-card">
+                <h3 class="course-name">Portrait photography</h3>
+                <p class="course-text">
+                  During this course, you will learn to choose the right
+                  lighting, reproduce the mood and expressions on the faces of
+                  the models.
+                </p>
+              </div>
             </li>
           </ol>
         </div>
       </section>
       <!----- Metehan ----->
       <section id="our-mentors" class="our-mentors">
-        <div class="mentors-container">
-          <h2 class="mentors-title section-title">our <span>mentors</span></h2>
-          <ul class="mentors-members">
-            <li class="mentors-item">
+        <div class="container">
+          <h2 class="mentors-header">
+            Our <span class="mentors-header-color">Mentors</span>
+          </h2>
+          <ul class="mentors-team">
+            <li class="mentors-team-member">
               <picture>
                 <source
                   srcset="
@@ -312,12 +411,10 @@
                   class="mentor-photo"
                 />
               </picture>
-              <div class="mentors-content">
-                <h3 class="mentors-subtitle">emilia smith</h3>
-                <h4 class="mentors-experience">1.5 years of experience</h4>
-              </div>
+              <h3 class="mentor-name">Emilia Smith</h3>
+              <p class="mentors-ammount">1.5 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li class="mentors-team-member">
               <picture>
                 <source
                   srcset="
@@ -339,12 +436,10 @@
                   class="mentor-photo"
                 />
               </picture>
-              <div class="mentors-content">
-                <h3 class="mentors-subtitle">alex lebedev</h3>
-                <h4 class="mentors-experience">3.5 years of experience</h4>
-              </div>
+              <h3 class="mentor-name">Alex Lebedev</h3>
+              <p class="mentors-ammount">3.5 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li class="mentors-team-member">
               <picture>
                 <source
                   srcset="
@@ -366,12 +461,10 @@
                   class="mentor-photo"
                 />
               </picture>
-              <div class="mentors-content">
-                <h3 class="mentors-subtitle">mia dubrovska</h3>
-                <h4 class="mentors-experience">2.0 years of experience</h4>
-              </div>
+              <h3 class="mentor-name">Mia Dubrovska</h3>
+              <p class="mentors-ammount">2.0 years of experience</p>
             </li>
-            <li class="mentors-item">
+            <li class="mentors-team-member">
               <picture>
                 <source
                   srcset="
@@ -393,10 +486,8 @@
                   class="mentor-photo"
                 />
               </picture>
-              <div class="mentors-content">
-                <h3 class="mentors-subtitle">eliot kovalev</h3>
-                <h4 class="mentors-experience">4.0 years of experience</h4>
-              </div>
+              <h3 class="mentor-name">Eliot Kovalev</h3>
+              <p class="mentors-ammount">4.0 years of experience</p>
             </li>
           </ul>
         </div>
