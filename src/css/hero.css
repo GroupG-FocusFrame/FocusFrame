@@ -1,10 +1,10 @@
 /* Mobile Design */
 .hero{
-    background-color: red;
-}
+    width: 335px; 
+    height: 777px;
+    background-color: #1D1D1D;
+    border-radius: 30px;
 
-.h-text{
- 
 }
 
 .p-text-div{
@@ -12,7 +12,7 @@
 
 }
 
-.h-text-p{
+.h-text{
     width: 295px;
     height: 176px;
     top: 40px;
@@ -20,25 +20,41 @@
     gap: 0px;
     opacity: 0px;
     font-family: DM Sans;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 500;
-    line-height: 64px;
-    letter-spacing: -0.04em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+    line-height: 44px;
+    letter-spacing: -0.04em;  
 }
+
+.h-text-p{
+   font-size: 40px;
+} 
 
 .photo-sp{
     color: #BEA69E;
+    font-style: italic;
+    font-family: DM Sans;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -0.04em;
+    text-align: left;
 }
 
-
+.happy-sect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 4px;
+    margin-top: 4px;
+}
 
 .ikon-h-div{
-    width: 30px;
-    height: 30px;
+    width: 44px;
+    height: 44px;
+    margin: -2;
+    
 }
 
 .humans-box{
@@ -46,20 +62,524 @@
     flex-direction: row;
 }
 
+.our-div{
+    width: 67px;
+    height: 36px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
 #icon-arrow{
     transform: rotate(45deg) scale(1.5);
 }
 
+.rewies-div{
 
+}
+
+.last-boxes{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    margin-top: 40px;
+}
+
+
+.rewies-span{
+    color: #FFFFFF80;;
+}
+
+.right-ikon{
+    width: 18px;
+    height: 8.66px;
+}
+
+
+.star-box{
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+}
+
+.star-ikon{
+    background: #BEA69E;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.star-svg {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+    width: 20px;
+    height: 20px;
+  }
+
+  .right-div-img{
+  
+
+  }
+
+  .img-boy{
+    width: 259px;
+    height: 314px;
+
+    
+  }
 
 /* Tablet Design */
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .hero{
+        background-color: #1D1D1D;
+        border-radius: 30px;
+        width: 704px;
+        height: 900px;
+        border-radius: 30px;
+
+    
+    }
+    
+    .p-text-div{
+        width: 418px;
+        height: 54px;
+        top: 276px;
+        left: 32px;
+        gap: 0px;
+        opacity: 0px;
+    
+    }
+    
+    .h-text{
+       
+
+    }
+    
+    .h-text-p{
+        width: 517px;
+        height: 192px;
+        top: 64px;
+        left: 32px;
+        gap: 0px;
+        opacity: 0px;
+       font-size: 40px;
+       
+    } 
+    
+    .photo-sp{
+        color: #BEA69E;
+        font-style: italic;
+        font-family: DM Sans;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: -0.04em;
+        text-align: left;
+    }
+    
+    .happy-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 16px;
+    }
+    
+    .ikon-h-div{
+        width: 44px;
+        height: 44px;
+        margin: -2;
+        
+    }
+
+    .humans-div{
+        display: flex;
+        flex-direction: row;
+        column-gap: 12px;
+    }
+    
+    .humans-box{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .our-div{
+        width: 82px;
+        height: 40px;
+        gap: 0px;
+        opacity: 0px;
+
+    
+    }
+    
+    #icon-arrow{
+        transform: rotate(45deg) scale(1.5);
+    }
+    
+    .rewies-div{
+    
+    }
+    
+    .last-boxes{
+        display: flex;
+        flex-direction: row;
+        column-gap: 40px;
+        margin-top: 114px;
+    }
+    
+    
+    .rewies-span{
+        color: #FFFFFF80;;
+    }
+    
+    .right-ikon{
+        width: 18px;
+        height: 8.66px;
+    }
+    
+    
+    .star-box{
+        display: flex;
+        flex-direction: row;
+        column-gap: 12px;
+    }
+    
+    .star-ikon{
+        background: #BEA69E;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    
+    
+    .star-svg {
+        fill: none;
+        stroke: black;
+        stroke-width: 2;
+        width: 20px;
+        height: 20px;
+      }
+    
+      .right-div-img{
+        margin-top: 31px;
+        
+      }
+
+      .img-boy{
+        width: 397px;
+         height: 398px;
+
+      }
+
+      .section-right{
+        display: flex;
+        justify-content: center;
+      }
+}
 
 /* Desktop*1280 Design */
 
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+    .hero{
+        background-color: #1D1D1D;
+        border-radius: 30px;
+        width: 1080px;
+        height: 600px;
+        top: 160px;
+        left: 100px;
+        gap: 0px;
+        border-radius: 30px 0px 0px 0px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+    }
+    
+    .p-text-div{
+        width: 418px;
+        height: 54px;
+        top: 276px;
+        left: 32px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    
+    }
+    
+    .h-text{
+        width: 295px;
+        height: 176px;
+        top: 40px;
+        left: 20px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: DM Sans;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: -0.04em;  
+    }
+    
+    .h-text-p{
+       font-size: 40px;
+    } 
+    
+    .photo-sp{
+        color: #BEA69E;
+        font-style: italic;
+        font-family: DM Sans;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: -0.04em;
+        text-align: left;
+    }
+    
+    .happy-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 8px;
+    }
+    
+    .ikon-h-div{
+        width: 44px;
+        height: 44px;
+        margin: -2;
+        
+    }
+    
+    .humans-box{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .our-div{
+        width: 82px;
+        height: 40px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.04em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    
+    }
+    
+    #icon-arrow{
+        transform: rotate(45deg) scale(1.5);
+    }
+    
+    .rewies-div{
+    
+    }
+    
+    .last-boxes{
+        display: flex;
+        flex-direction: row;
+        column-gap: 40px;
+    }
+    
+    
+    .rewies-span{
+        color: #FFFFFF80;;
+    }
+    
+    .right-ikon{
+        width: 18px;
+        height: 8.66px;
+    }
+    
+    
+    .star-box{
+        display: flex;
+        flex-direction: row;
+        column-gap: 12px;
+    }
+    
+    .star-ikon{
+        background: #BEA69E;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    
+    
+    .star-svg {
+        fill: none;
+        stroke: black;
+        stroke-width: 2;
+        width: 20px;
+        height: 20px;
+      }
+    
+      .right-div-img{
+        position: relative;
+        top: 48px;
+        left: 100px;
+    }
+      }
+
+      .img-boy{
+        width: 397px;
+        height: 520px;
+        top: 80px;
+        left: 633px;
+        gap: 0px;
+        opacity: 0px;
+
+      }
 
 /* Desktop*1440 Design */
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+    .hero{
+        background-color: #1D1D1D;
+        border-radius: 30px;
+        width: 1240px;
+        border-radius: 30px ;
+
+
+    
+    }
+    
+    .p-text-div{
+        padding-top: 110px;
+    
+    }
+    
+    .h-text{
+        width: 295px;
+        height: 176px;
+        top: 40px;
+        left: 20px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: DM Sans;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: -0.04em;  
+    }
+    
+    .h-text-p{
+       font-size: 40px;
+    } 
+    
+    .photo-sp{
+        color: #BEA69E;
+        font-style: italic;
+        font-family: DM Sans;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: -0.04em;
+        text-align: left;
+    }
+    
+    .happy-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 4px;
+    }
+    
+    .ikon-h-div{
+        width: 44px;
+        height: 44px;
+        margin: -2;
+        
+    }
+    
+    .humans-box{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .our-div{
+        width: 82px;
+        height: 40px;
+        gap: 0px;
+        opacity: 0px;
+
+    
+    }
+    
+    #icon-arrow{
+        transform: rotate(45deg) scale(1.5);
+    }
+    
+    
+    
+    .last-boxes{
+        display: flex;
+        flex-direction: row;
+        column-gap: 40px;
+        
+    }
+    
+    
+    .rewies-span{
+        color: #FFFFFF80;;
+    }
+    
+    .right-ikon{
+        width: 18px;
+        height: 8.66px;
+    }
+    
+    
+    .star-box{
+        display: flex;
+        flex-direction: row;
+        column-gap: 12px;
+    }
+    
+    .star-ikon{
+        background: #BEA69E;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    
+    
+    .star-svg {
+        fill: none;
+        stroke: black;
+        stroke-width: 2;
+        width: 20px;
+        height: 20px;
+      }
+    
+      .right-div-img{
+        margin-top: 31px;
+      }
+}

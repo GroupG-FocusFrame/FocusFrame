@@ -2,6 +2,10 @@
     version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
 
+            <symbol id="right-arrow" width="18" height="9" viewBox="0 0 18 9" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 0L18 4.33013L12.5 8.66025V5.08013L0 5.08013L0 3.58013L12.5 3.58013V0Z" fill="white"/>
+            </symbol>
+
         <symbol id="icon-arrow" viewBox="0 0 20 19">
             <path
                 d="M9.57556 3.96516L16.5722 3.74689L15.1423 10.5993L12.841 7.85676L3.26544 15.8916L2.30126 14.7425L11.8768 6.70769L9.57556 3.96516Z"
@@ -24,8 +28,7 @@
             <line x1="17.1522" y1="12.9243" x2="38.5" y2="12.9243" stroke="white" stroke-width="3"
                 stroke-linecap="round" />
         </symbol>
-        <symbol id="star" viewBox="0 0 20 20"
-        >
+        <symbol id="star" viewBox="0 0 20 20">
             <path
                 d="M10 1.66667L12.575 6.88333L18.3334 7.725L14.1667 11.7833L15.15 17.5167L10 14.8083L4.85002 17.5167L5.83335 11.7833L1.66669 7.725L7.42502 6.88333L10 1.66667Z"
             />
@@ -53,3 +56,5 @@
 
     </defs>
 </svg>
+
+
