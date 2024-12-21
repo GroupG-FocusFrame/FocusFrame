@@ -493,7 +493,100 @@
         </div>
       </section>
       <!----- Furkan ----->
-      <section id="sign-up" class="sign-up"></section>
+      <section id="sign-up" class="sign-up">
+        <div class="container">
+          <div class="sign-up-wrap">
+            <h2 class="sign-up-title">Sign <span>Up</span></h2>
+            <p class="sign-up-text">
+              Please use the form below to contact us. Enter your name, email,
+              and message and we'll get back to you shortly.
+            </p>
+            <form class="sign-up-form">
+              <div class="sign-up-input-wrap">
+                <label class="sign-up-label" for="name">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    pattern="[A-Za-z\s-]+"
+                    title="Username must be two words separated by space."
+                    placeholder="Enter your name"
+                    required
+                  />
+                </label>
+                <label class="sign-up-label" for="email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </label>
+                <label class="sign-up-label" for="comment">
+                  <textarea
+                    name="comment"
+                    id="comment"
+                    placeholder="Message"
+                  ></textarea>
+                </label>
+              </div>
+
+              <button type="submit" class="sign-up-button">Send</button>
+              <p class="sign-up-policy-text">
+                By clicking on “Send” button, you agree to our
+                <a href="#" class="sign-up-link">Privacy Policy</a>, <br />and
+                allow Promodo to use this information for marketing purposes.
+              </p>
+            </form>
+          </div>
+          <div class="sign-up-img">
+            <div class="sign-up-lens-img-wrap">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/sign/lens1440-1x.png 1x,
+                    ./src/img/sign/lens1440-2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="
+                    ./src/img/sign/lens1280-1x.png 1x,
+                    ./src/img/sign/lens1280-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <img src="./src/img/sign/lens1280-1x.png" alt="photographer" />
+              </picture>
+            </div>
+
+            <div class="sign-up-camera-img-wrap">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/sign/camera1440-1x.png 1x,
+                    ./src/img/sign/camera1440-2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="
+                    ./src/img/sign/camera1280-1x.png 1x,
+                    ./src/img/sign/camera1280-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <img
+                  src="./src/img/sign/camera1280-1x.png"
+                  alt="photographer"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
       <!----- Ozan ----->
       <section id="reviews" class="reviews">
         <div class="container">
@@ -588,7 +681,117 @@
       </section>
     </main>
     <!----- Can ----->
-    <footer id="footer" class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-frame">
+            <a href="./index.html" class="footer-logo-link">
+              <svg class="footer-logo" width="127" height="20">
+                <use href="./src/img/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <div class="footer-contacts">
+              <address id="footer" class="footer-address">
+                <a href="tel:+380665438912" class="footer-phone"
+                  >+38 066 543 8912</a
+                >
+                <a
+                  href="https://maps.app.goo.gl/gN1hGMCLPd47ZX417"
+                  class="footer-country"
+                  target="_blank"
+                  >1678 S. Pioneer Road Salt Lake City UT 84104</a
+                >
+              </address>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a
+                  href="https://www.instagram.com/goit.turkiye/"
+                  target="_blank"
+                  class="footer-social-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="footer-social-item">
+                <a
+                  href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                  target="_blank"
+                  class="footer-social-link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer-social-item">
+                <a
+                  href="https://www.youtube.com/@GoITTurkey"
+                  target="_blank"
+                  class="footer-social-link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="#about-us" class="footer-menu-link footer-social-link"
+                  >About Us</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a
+                  href="#our-courses"
+                  class="footer-menu-link footer-social-link"
+                  >Our Courses</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a
+                  href="#our-mentors"
+                  class="footer-menu-link footer-social-link"
+                  >Our Mentors</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a href="#reviews" class="footer-menu-link footer-social-link"
+                  >Reviews</a
+                >
+              </li>
+              <li class="footer-menu-item">
+                <a href="#footer" class="footer-menu-link footer-social-link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form-container">
+            <form class="footer-form">
+              <label for="footer-email" class="footer-label">
+                <input
+                  id="footer-email"
+                  name="footer-email"
+                  type="email"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  placeholder="Enter your email"
+                  class="footer-input"
+                  required
+                />
+              </label>
+              <button type="submit" class="footer-form-button">Go</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-last-part">
+          <p class="footer-text">
+            Privacy policy<br />
+            Public Offering Agreement
+          </p>
+          <p class="footer-text">
+            2023 Focus Frame<br />
+            © All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="./src/main.js"></script>
     <script>
       function setAnimationDuration() {
