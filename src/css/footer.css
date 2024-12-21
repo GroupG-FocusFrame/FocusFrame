@@ -1,4 +1,17 @@
 /* Mobile Design */
+
+.footer {
+  background-image: url(../img/footer/footer-mobile-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer a:hover {
+  color: #bea69e;
+  transition: color 250ms ease-in-out;
+}
+
 .ftr-logo {
   width: 127px;
   height: 20px;
@@ -22,7 +35,69 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 40px;
 }
+
+.ftr-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 75px;
+}
+
+.ftr-menu,
+.ftr-social {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ftr-social-link,
+.ftr-menu-link {
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.ftr-subscribe {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.ftr-sub-input {
+  width: 267px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: white;
+  border: none;
+  padding: 18px;
+}
+
+.ftr-sub-button {
+  background-color: #1d1d1d;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ftr-privacy-copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ftr-cr-text {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
 /* Tablet Design */
 @media screen and (min-width: 768px) {
 }
